@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "shudsonbstar4 <sarah@sarah-hudson.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.1",
+    "requirejs": "^2.2.0"
+  },
+  "overrides": {
+      "BOWER-PACKAGE": {
+          "main": "**/*.js"
+      }
+  }
+}
