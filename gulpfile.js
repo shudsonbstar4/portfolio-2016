@@ -24,13 +24,6 @@ gulp.task('index', function() {
     .pipe(gulp.dest('./build')); 
 });
 
-//HTML -- PARTIALS -- Port files over to the build folder in their respective folders
-//gulp.task('html', function() {
-//   return gulp.src('src/**/*.html')
-//    .pipe(gulpIgnore.exclude('index.html'))
-//    .pipe(gulp.dest('./build')); 
-//});
-
 //Styles -- compile SCSS to CSS and compress
 gulp.task('sass', function() {
    return gulp.src('src/assets/styles/sass/**/*.scss')
@@ -42,7 +35,7 @@ gulp.task('styles', function() {
   return gulp.src('build/**/*.css')
     .pipe(sass({
         loadPath: [
-            nodeModulesPath + '/bootstrap-sass/assets/stylesheets',
+            //nodeModulesPath + '/bootstrap-sass/assets/stylesheets',
             nodeModulesPath + '/font-awesome/scss'
         ] 
     }))
@@ -84,10 +77,10 @@ gulp.task('images', function() {
     .pipe(gulp.dest('./build'))
 });
 
-gulp.task('icons', function() {
-    return gulp.src([bowerComponentsPath + '/font-awesome/fonts/**.*', bowerComponentsPath + '/bootstrap/fonts/**.*'])
-        .pipe(gulp.dest('./build/fonts'));
-});
+// gulp.task('icons', function() {
+//     return gulp.src([bowerComponentsPath + '/font-awesome/fonts/**.*', bowerComponentsPath + '/bootstrap/fonts/**.*'])
+//         .pipe(gulp.dest('./build/fonts'));
+// });
 
 // ### Clean Tasks
 
@@ -108,7 +101,7 @@ gulp.task('clean:build', ['del:build', 'cache:clear'], function() {
 //Build all files/Run all tasks
 gulp.task('build', function (callback) {
   runSequence('clean:build', 
-    ['index', 'images', 'sass', 'styles', 'vendor-js', 'scripts', 'icons'],
+    ['index', 'images', 'sass', 'styles', 'vendor-js', 'scripts'],
     callback
   )
 })
