@@ -1,0 +1,10 @@
+.img {
+  &--responsive {
+    height: auto;
+    width: 100%;
+  }
+
+  &--circle {
+    border-radius: 100%;
+  }
+}

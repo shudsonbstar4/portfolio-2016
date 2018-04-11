@@ -1,7 +1,15 @@
 @import "shared/variables";
 
-@import "../../../../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "../../../../bower_components/font-awesome/scss/font-awesome.scss";
 
 //Global
+@import "shared/normalize";
 @import "shared/global";
+@import "shared/layout";
+@import "shared/utilities";
+@import "shared/images";
+
+// Components
+@import "components/navbar";
+@import "components/modal";
+@import "components/footer";

@@ -35,7 +35,6 @@ gulp.task('styles', function() {
   return gulp.src('build/**/*.css')
     .pipe(sass({
         loadPath: [
-            //nodeModulesPath + '/bootstrap-sass/assets/stylesheets',
             nodeModulesPath + '/font-awesome/scss'
         ] 
     }))
@@ -76,11 +75,6 @@ gulp.task('images', function() {
     .pipe(imagemin())
     .pipe(gulp.dest('./build'))
 });
-
-// gulp.task('icons', function() {
-//     return gulp.src([bowerComponentsPath + '/font-awesome/fonts/**.*', bowerComponentsPath + '/bootstrap/fonts/**.*'])
-//         .pipe(gulp.dest('./build/fonts'));
-// });
 
 // ### Clean Tasks
 

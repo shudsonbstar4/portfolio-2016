@@ -1,0 +1,10 @@
+.modal {
+  //display: none;
+
+  display: flex;
+  
+  &--container {
+    margin: 0 auto;
+    width: 60%;
+  }
+}

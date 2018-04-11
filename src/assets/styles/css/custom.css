@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5 {
 	width:100%;
 }
 
-#projects .col-md-2 {
+#projects .col-2 {
 	padding:0;
 }
 
@@ -100,7 +100,10 @@ h1, h2, h3, h4, h5 {
 	padding:0;
 }
 
-#timeline_map .col-md-2, #timeline_map .col-md-5, #timeline_map .col-md-6 , #timeline_map .col-md-1{
+#timeline_map .col-2, 
+#timeline_map .col-5, 
+#timeline_map .col-6 , 
+#timeline_map .col-1{
 	padding:0;
 	display:table-column;
 }
@@ -129,7 +132,7 @@ h1, h2, h3, h4, h5 {
 	height:100%;
 	min-height:inherit;
 	position:absolute;
-	left:49%;
+	left: 50%;
 }
 
 .era {
