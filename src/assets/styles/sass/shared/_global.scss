@@ -1,5 +1,6 @@
 /* GENERAL & SITE-WIDE RULES */
 body {
+	background-color: map-get($neutrals, 'lighter');
 	font-family: 'Roboto Mono', monospace;
 	font-weight: 300;
 	font-size:16px;

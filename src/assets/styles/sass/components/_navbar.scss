@@ -1,3 +1,9 @@
 .navbar {
   display: flex;
+  flex: 1;
+  height: 4em;
+
+  & > * {
+    padding-right: $default-spacing;
+  }
 }

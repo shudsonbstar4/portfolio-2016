@@ -3,15 +3,7 @@
 @import "../../../../bower_components/font-awesome/scss/font-awesome.scss";
 
 //Global
-@import "shared/normalize";
-@import "shared/global";
-@import "shared/layout";
-@import "shared/utilities";
-@import "shared/images";
+@import "shared/shared";
 
 // Components
-@import "components/buttons";
-@import "components/hero";
-@import "components/navbar";
-@import "components/modal";
-@import "components/footer";
+@import "components/components";

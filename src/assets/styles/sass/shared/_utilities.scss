@@ -5,9 +5,19 @@
 }
 
 .align {
-  &--centered {
+  &--left {
+    align-items: left;
     display: flex;
+  }
+
+  &--right {
+    align-items: right;
+    display: flex;
+  }
+
+  &--centered {
     align-items: center;
+    display: flex;
   }
 }
 
