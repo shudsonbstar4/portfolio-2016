@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 
 //INDEX FILE -- Replace asset paths & port to the build folder
 gulp.task('index', function() {
-   return gulp.src('src/index.html')
+   return gulp.src('src/*.html')
     .pipe(htmlreplace({
         'css': 'styles/main.css',
         'js': ['scripts/vendor.min.js', 'scripts/main.min.js']
