@@ -1,5 +1,5 @@
 .footer {
   background-color: #1a1a1a;
-  color: $font-lightest;
+  color: map-get($neutrals, 'lightest');
   padding: $default-spacing;
 }

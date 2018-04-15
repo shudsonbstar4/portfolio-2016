@@ -3,39 +3,49 @@
 	<head>
 		<title>Home | Sarah Hudson - Layout Designer and Front End Developer</title>
 		<meta charset="UTF-8">
-<!--		<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>-->
-		<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,300' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
         
         <link rel="stylesheet" href="styles/main.css">
 
 	</head>
 	<body>
-		<header class="hero">
-			<!-- NAVIGATION -->
-			<nav class="navbar navbar-default">
-				<div class="container">
-					<div class="navbar-header">
-						<div class="navbar-left">
-							<a class="navbar-brand" href="index.html">
-								Sarah Hudson
-							</a>
-						</div>
+		<!-- NAVIGATION -->
+		<nav class="grid--row navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<div class="navbar-left">
+						<a class="navbar-brand" href="index.html">
+							Sarah Hudson
+						</a>
 					</div>
-					  <ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-						  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-						  <ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						  </ul>
-						</li>
-					  </ul>
 				</div>
-			</nav>
+					<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">Link</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li role="separator" class="divider"></li>
+						<li><a href="#">Separated link</a></li>
+						</ul>
+					</li>
+					</ul>
+			</div>
+		</nav>
+		<div class="hero">
+			<!-- HEADING -->
+			<section id="greeting" class="align--centered__vertical text--center">
+				<header>
+					<h1>Hello, my name is Sarah Hudson. And I'm a Designer & Developer.</h1>
+					<h3 class="light-text">I'm what they call a unicorn -- a unique blend with an eye for design as well as a penchant for clean code. What have I worked on? Anything from the art direction of a magazine to coding out mobile apps.</h3>
+					<div class="clear-spacing>"</div>
+					<button class="button--large button--ghost__primary">View My Projects <i class="glyphicon glyphicon-menu-down"></i></button>
+				</header>
+			</section>
+			<!-- END HEADING -->
+		</div>
 		
 			<!--
 				SECTIONS
@@ -50,20 +60,10 @@
 
 			-->
 			
-			<!-- HEADING -->
-			<section id="greeting">
-				<header class="container text--center">
-					<h1>Hello, my name is Sarah Hudson. And I'm a Designer & Developer.</h1>
-					<h3 class="light-text">I'm what they call a unicorn -- a unique blend with an eye for design as well as a penchant for clean code. What have I worked on? Anything from the art direction of a magazine to coding out mobile apps.</h3>
-					<div class="clear-spacing>"</div>
-					<button class="btn btn-info btn-lg">View My Projects <i class="glyphicon glyphicon-menu-down"></i></button>
-				</header>
-			</section>
-		<!-- END HEADING -->
 		
 		<!-- GRID -->
 		<section id="projects">
-			<div class="row">
+			<div class="grid--row">
 				<div class="col-2">
 					<img alt="placeholder" src="https://placehold.it/350x350" />
 				</div>
@@ -113,7 +113,8 @@
 		</div>
 		
 		<section id="timeline" class="container--centered">
-			<div class="col-10">
+			<div class="grid--row">
+				<div class="col-10">
 					<header>
 						<h2 class="text--center">What I've worked on</h2>
 					</header>
@@ -166,7 +167,8 @@
 							</tbody>
 						</table>
 					</div>
-			</section>
+			</div>
+		</section>
 		<!-- END TIMELINE-->
 		
 <footer class="footer">

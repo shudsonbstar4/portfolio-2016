@@ -2,7 +2,17 @@
 $icon-font-path: "../fonts/";
 
 /// COLORS
-$font-lightest: #fff;
+$brand: (
+  'primary': #ffab32,
+  'accent': #6fe0e7
+);
+
+$neutrals: (
+  'lightest': #ffffff,
+  'medium': #5d5d5d,
+  'darkest': #1a1a1a
+);
 
 /// BOX MODEL
 $default-spacing: 10px;
+$default-box-shadow: 1px 1px 1px rgba(map-get($neutrals, 'darkest'), 0.5);

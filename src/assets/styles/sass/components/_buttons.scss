@@ -1,0 +1,36 @@
+.button {
+  border-radius: 0;
+  transition: linear all 0.3s;
+
+  &--large {
+    font-size: 1em;
+    padding: $default-spacing;
+    text-shadow: $default-box-shadow;
+  }
+
+  &--xl {
+    font-size: 1.2em;
+    padding: $default-spacing $default-spacing * 1.5;
+  }
+}
+
+.button--ghost {
+  @extend .button;
+
+  background: transparent;
+  border: 3px solid map-get($neutrals, 'lightest');
+  color: map-get($neutrals,'lightest');
+
+  &:hover {
+    transition:linear all 0.3s;
+  }
+}
+
+.button--ghost__primary {
+  @extend .button--ghost;
+
+  &:hover {
+    background-color: map-get($brand, 'primary');
+    border-color: map-get($brand, 'primary');
+  }
+}

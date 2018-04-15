@@ -3,3 +3,17 @@
     text-align: center;
   }
 }
+
+.align {
+  &--centered {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.align--centered__vertical {
+  @extend .align--centered;
+
+  flex-direction: column;
+  justify-content: center;
+}
