@@ -2,3 +2,10 @@
   background-color: rgba(map-get($neutrals, 'darkest'), 0.5);
   height: 100%;
 }
+
+.hero {
+  p {
+    color: map-get($neutrals, 'lightest');
+    font-size: 1em;
+  }
+}

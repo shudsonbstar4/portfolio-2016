@@ -1,0 +1,31 @@
+html,
+body {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+}
+
+a {
+  color: darken(map-get($brand, 'accent'), 30);
+  text-decoration: none;
+}
+
+.text {
+  &--light {
+    font-weight: 300;
+  }
+
+  &--bold {
+    font-weight: 700;
+  }
+}
+
+.navbar {
+  font-family: 'Roboto Mono', monospace;
+	font-weight: 400;
+}

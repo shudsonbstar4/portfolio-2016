@@ -3,7 +3,24 @@
   flex: 1;
   height: 4em;
 
-  & > * {
+  &--header {
+    margin-right: $default-spacing;
+    padding: $default-spacing $default-spacing * 1.5;
+  }
+
+  &--brand {
+    border-right: 1px solid map-get($neutrals, 'darkest');
     padding-right: $default-spacing;
+  }
+
+  &--links {
+    li {
+      margin-right: $default-spacing;
+      padding: $default-spacing $default-spacing * 1.5;
+
+      &:hover {
+        background-color: darken(map-get($neutrals, 'lightest'), 10);
+      }
+    }
   }
 }

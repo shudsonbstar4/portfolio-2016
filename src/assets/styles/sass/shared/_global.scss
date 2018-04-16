@@ -1,33 +1,18 @@
 /* GENERAL & SITE-WIDE RULES */
 body {
 	background-color: map-get($neutrals, 'lighter');
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 300;
-	font-size:16px;
-}
-
-h1, h2, h3, h4, h5 {
-	font-weight:400;
-}
-
-.light-text {
-	font-weight:300;
-}
-
-.bold-text {
-	font-weight:700;
 }
 
 .clear-spacing{
-	margin:1em 0;
+	margin: 1em 0;
 }
 
 .clear-spacing-2 {
-	margin:10em 0;
+	margin: 10em 0;
 }
 
 .clear-spacing-3{
-	margin:2em 0;
+	margin: 2em 0;
 }
 
 /* HERO SECTION */

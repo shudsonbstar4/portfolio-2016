@@ -2,15 +2,24 @@
   border-radius: 0;
   transition: linear all 0.3s;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   &--large {
     font-size: 1em;
     padding: $default-spacing;
-    text-shadow: $default-box-shadow;
   }
 
   &--xl {
     font-size: 1.2em;
     padding: $default-spacing $default-spacing * 1.5;
+  }
+
+  &--primary {
+    background-color: map-get($brand, 'primary');
+    border-color: map-get($brand, 'primary');
+    color: map-get($neutrals, 'dark');
   }
 }
 
@@ -20,6 +29,7 @@
   background: transparent;
   border: 3px solid map-get($neutrals, 'lightest');
   color: map-get($neutrals,'lightest');
+  text-shadow: $default-box-shadow;
 
   &:hover {
     transition:linear all 0.3s;
